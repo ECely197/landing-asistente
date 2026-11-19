@@ -685,8 +685,8 @@ export default function LandingPage() {
           <div className="glass-card rounded-3xl p-8 flex flex-col justify-between border-white/10 hover:border-white/20 transition-all">
             <div className="space-y-6">
               <div>
-                <h4 className="text-xl font-bold text-white">Emprendedor</h4>
-                <p className="text-xs text-zinc-400 mt-1">Ideal para comercios unipersonales que arrancan.</p>
+                <h4 className="text-xl font-bold text-white">Plan Emprendedor</h4>
+                <p className="text-xs text-zinc-400 mt-1">Para emprendedores que trabajan solos y están arrancando.</p>
               </div>
 
               <div className="flex items-baseline gap-1">
@@ -697,19 +697,19 @@ export default function LandingPage() {
               <ul className="space-y-3 text-xs sm:text-sm text-zinc-300">
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>1 Cuenta de Dueño (Telegram o WhatsApp)</span>
+                  <span>1 Cuenta de Dueño (sin vendedores)</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Registro de inventario ilimitado por voz y foto</span>
+                  <span>Tope de hasta 30 productos en inventario</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Cálculo automático de costos y ganancia neta</span>
+                  <span>Registro de productos por foto, voz o texto</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Dashboards semanales de ventas en HTML</span>
+                  <span>Cálculo básico de costos y ganancia neta</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -722,9 +722,9 @@ export default function LandingPage() {
               <button
                 onClick={() =>
                   abrirModalPago({
-                    nombre: 'Emprendedor',
+                    nombre: 'Plan Emprendedor',
                     precioCOP: 39000,
-                    descripcion: 'Ideal para comercios unipersonales',
+                    descripcion: 'Para emprendedores que trabajan solos y están arrancando.',
                   })
                 }
                 className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl glass-card glass-card-hover text-white font-semibold text-sm"
@@ -744,10 +744,10 @@ export default function LandingPage() {
             <div className="space-y-6">
               <div>
                 <h4 className="text-xl font-bold text-white flex items-center gap-2">
-                  <span>Negocio Pro</span>
+                  <span>Plan Negocio Pro</span>
                   <Sparkles className="w-4 h-4 text-indigo-400" />
                 </h4>
-                <p className="text-xs text-zinc-400 mt-1">Para negocios con vendedores y alto flujo de pedidos.</p>
+                <p className="text-xs text-zinc-400 mt-1">Control total de tu local y tu equipo desde tu celular, en tiempo real.</p>
               </div>
 
               <div className="flex items-baseline gap-1">
@@ -758,23 +758,27 @@ export default function LandingPage() {
               <ul className="space-y-3 text-xs sm:text-sm text-zinc-200">
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0" />
-                  <span className="font-semibold text-white">Todo lo del Plan Emprendedor</span>
+                  <span className="font-semibold text-white">Todo lo del Plan Emprendedor, sin límites</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0" />
-                  <span>Hasta 3 Vendedores vinculados (Roles aislados)</span>
+                  <span>Inventario ILIMITADO + búsqueda visual (cita la foto original al consultar stock)</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0" />
-                  <span>Módulo CRM: Tarjetas digitales de fidelización QR</span>
+                  <span>Dueño + hasta 3 Vendedores con nombre propio y costos ocultos</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0" />
-                  <span>Escaneo automático de QR desde fotos enviadas</span>
+                  <span>Notificaciones en vivo al dueño: cada venta, apertura, cierre, gasto de caja y alerta de stock bajo</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0" />
-                  <span>Reportes BI interactivos en tiempo real</span>
+                  <span>Asignación de tareas por nombre y buzón de notas/novedades de empleados</span>
+                </li>
+                <li className="flex items-center gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0" />
+                  <span>Reportes a la medida (diario, semanal, mensual, semestral o por fechas) con ranking de puntualidad</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0" />
@@ -787,9 +791,9 @@ export default function LandingPage() {
               <button
                 onClick={() =>
                   abrirModalPago({
-                    nombre: 'Negocio Pro',
+                    nombre: 'Plan Negocio Pro',
                     precioCOP: 79000,
-                    descripcion: 'Hasta 3 vendedores, CRM y reportes BI',
+                    descripcion: 'Control total de tu local y tu equipo desde tu celular, en tiempo real.',
                   })
                 }
                 className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-gradient-to-r from-indigo-500 via-indigo-600 to-violet-600 hover:from-indigo-600 hover:to-violet-700 text-white font-bold text-sm shadow-lg shadow-indigo-600/30 hover:scale-[1.02] active:scale-[0.98] transition-all"
@@ -800,12 +804,12 @@ export default function LandingPage() {
             </div>
           </div>
 
-          {/* Plan 3: Multi-Sede / Franquicia */}
+          {/* Plan 3: Multi-Sede */}
           <div className="glass-card rounded-3xl p-8 flex flex-col justify-between border-white/10 hover:border-white/20 transition-all">
             <div className="space-y-6">
               <div>
-                <h4 className="text-xl font-bold text-white">Multi-Sede</h4>
-                <p className="text-xs text-zinc-400 mt-1">Para cadenas, franquicias o múltiples puntos de venta.</p>
+                <h4 className="text-xl font-bold text-white">Plan Multi-Sede</h4>
+                <p className="text-xs text-zinc-400 mt-1">Para cadenas, franquicias o negocios con múltiples puntos de venta.</p>
               </div>
 
               <div className="flex items-baseline gap-1">
@@ -820,15 +824,15 @@ export default function LandingPage() {
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Vendedores ilimitados y múltiples locales</span>
+                  <span>Vendedores y locales ilimitados</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Facturación B2B visual con liquidación por video</span>
+                  <span>Control de inventario multi-bodega y tareas por sede</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Auditorías cruzadas y exportación de base de datos</span>
+                  <span>Auditoría cruzada entre locales y exportación de datos a Excel/CSV</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -841,9 +845,9 @@ export default function LandingPage() {
               <button
                 onClick={() =>
                   abrirModalPago({
-                    nombre: 'Multi-Sede',
+                    nombre: 'Plan Multi-Sede',
                     precioCOP: 149000,
-                    descripcion: 'Vendedores ilimitados y multi-local',
+                    descripcion: 'Para cadenas, franquicias o negocios con múltiples puntos de venta.',
                   })
                 }
                 className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl glass-card glass-card-hover text-white font-semibold text-sm"
